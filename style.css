@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    margin: 100px;;
+}
+
+body,p,h1,h2{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.barraDescuento{
+    margin: 0;
+    padding:  15px 40px;
+    background-color: #D1891C;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.encabezado{
+    background: #00669F;
+    padding: 30px 40px;
+
+}
+
+.carta{
+    background: #F3F3F3;
+    height: 700px;
+    width: 400px;
+    margin: 10px;
+    position: relative;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.batmanImagen{
+    height: 35%;
+    position: relative;
+    background-image: url(./img/fondoBatman.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.batman{
+    background-image: url(./img/batman.jpeg);
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    border-radius: 50%;
+    left: 30%;
+    background-size: cover;
+    bottom: 100px;
+}
+
+.harleyImagen{
+    height: 35%;
+    position: relative;
+    background-image: url(./img/fondoHarley.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.harley{
+    background-image: url(./img/harley.jpeg);
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    border-radius: 50%;
+    left: 30%;
+    background-size: cover;
+    bottom: 100px;
+}
+
+.supermanImagen{
+    height: 35%;
+    position: relative;
+    background-image: url(./img/fondoSuperman.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.superman{
+    background-image: url(./img/superman.jpg);
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    border-radius: 50%;
+    left: 30%;
+    background-size: cover;
+    bottom: 100px;
+}
+
+.flashImagen{
+    height: 35%;
+    position: relative;
+    background-image: url(./img/fondoFlash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.flash{
+    background-image: url(./img/flash.jpg);
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    border-radius: 50%;
+    left: 30%;
+    background-size: cover;
+    bottom: 100px;
+}
+
+h2{
+    text-align: center;
+}
+
+.carta p{
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+    background-color: #00669F;
+    color: #F3F3F3;
+    position: relative;
+    left: 35%;
+    border: none;
+    width: 128.78px;
+    height: 48.52px;
+}
+
+footer{
+    background-color: #00669F;
+    bottom: 0;
+    width: 100%;
+    height: 51px;
+    padding: 30px 40px;
+}
+
+
+footer p{
+    left: 76px;
+    font-size: 16px;
+    color: white;
+    bottom: 20px;
+}
+
+/*** Responsive */
+@media (max-width: 768px) {
+     
+    .carta{
+        display: inline-block;
+        width: 275px;
+        margin: 30px;
+        
+    }
+   
+    .contenedor{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 30px;
+    }
+
+    .batman{
+        left: 23%;
+    }
+
+    .harley{
+        left: 23%;
+    }
+
+    .superman{
+        left: 23%;
+    }
+
+    .flash{
+        left: 23%;
+    }
+
+    button{
+        width: 100px;
+        height: 40px;
+        left: 30%;
+    }
+
+    footer p{
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .carta{
+        display: block;
+        width: 100%;
+        
+        
+    }
+    .contenedor{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 30px;
+    }
+
+    .batman{
+        left: 29%;
+    }
+
+    .harley{
+        left: 29%;
+    }
+
+    .superman{
+        left: 29%;
+    }
+
+    .flash{
+        left: 29%;
+    }
+
+    button{
+        width: 100px;
+        height: 40px;
+        left: 36%;
+    }
+
+    footer p{
+        text-align: center;
+    }
+}
+
+
